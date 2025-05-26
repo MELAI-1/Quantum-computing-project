@@ -1,0 +1,58 @@
+# === Core Quantum Computing Libraries ===
+qiskit>=1.0.0              # IBM Quantum SDK
+qiskit-aer                 # High-performance simulator
+qiskit-ibmq-provider       # IBM Quantum cloud provider
+qiskit-machine-learning    # ML with quantum circuits
+qiskit-nature              # Quantum chemistry and physics
+qiskit-optimization        # Optimization problems
+qiskit-finance             # Quantum finance models
+
+pennylane>=0.36.0          # Versatile quantum programming framework
+pennylane-qiskit           # Interface between PennyLane and Qiskit
+pennylane-lightning        # Fast CPU simulator for PennyLane
+pennylane-lightning-gpu    # GPU-accelerated backend (optional)
+pennylane-cirq             # Google Cirq backend support
+
+cirq>=1.2.0                # Google Quantum Framework
+braket-sdk                 # Amazon Braket SDK
+braket-circuits            # For defining quantum circuits
+
+# === Scientific Computing & Math ===
+numpy>=1.23.0
+scipy>=1.10.0
+sympy>=1.13.3
+networkx
+
+# === Machine Learning & Optimization ===
+scikit-learn
+torch>=2.0.0
+optree>=0.13.0
+matplotlib
+seaborn
+
+# === Development utilities ===
+cmake
+ninja
+filelock
+jinja2
+psutil
+pyyaml
+requests
+packaging
+setuptools>=62.3.0,<80.0
+typing-extensions>=4.10.0
+
+# === Typing and linting ===
+types-dataclasses
+mypy
+flake8
+black
+
+# === Platform-specific tools ===
+lintrunner ; platform_machine != "s390x"
+
+# === Optional: Visualization & Dashboard ===
+plotly
+notebook
+jupyterlab
+streamlit
